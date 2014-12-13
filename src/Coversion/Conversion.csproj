@@ -230,8 +230,6 @@
     <EmbeddedResource Include="App_GlobalResources\Lang.ru.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="Properties\PublishProfiles\uriil - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\uriil - Web Deploy.pubxml" />
     <Content Include="Views\Conversion\Length.cshtml" />
     <Content Include="Views\Conversion\Md5.cshtml" />
   </ItemGroup>
@@ -241,6 +239,9 @@
       <LastGenOutput>Lang.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\conversionco.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
