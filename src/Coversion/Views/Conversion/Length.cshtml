@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = Resources.Lang.LengthTitle;
+    ViewBag.Description = Resources.Lang.HomePageDescription;
+    ViewBag.PageKeyWords = Resources.Lang.HomePageKeywords;
+}
+
+<script type="text/javascript">
+    $(function () {
+        var output = $("#Result");
+        var inputControl = $("#Quantity");
+        var fromValue = $("#From");
+        var toValue = $("#To");
+        $('#From').change(function () {
+            UpdateResult();
+        });
+        $('#To').change(function () {
+            UpdateResult();
+        });
+        $('#Quantity').change(function () {
+            UpdateResult();
+        });
+        function UpdateResult() {
+            var iv = $(inputControl).val();
+            var m1 = $(fromValue).find(':selected').data('multiplier');
+            var m2 = $(toValue).find(':selected').data('multiplier');
+            
+            $(output).val(Math.round(iv * m1 / m2 * 10000) / 10000);
+        };
+
+    });
+</script>
+
+<div class="page_title">
+    <h2>@Resources.Lang.LengthTitle</h2>
+    @Html.Raw(Resources.Lang.LengthBody)
+</div>
+
+
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="Quantity">@Resources.Lang.Quantity</label>
+        <div class="controls">
+            <input id="Quantity" type="text" placeholder="@Resources.Lang.Quantity">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="From">@Resources.Lang.From</label>
+        <div class="controls">
+            <select id="From">
+                <option data-multiplier="0.01">@Resources.Lang.Centimeter</option>
+                <option data-multiplier="0.3048">@Resources.Lang.Feet</option>
+                <option data-multiplier="0.0254">@Resources.Lang.Inch</option>
+                <option data-multiplier="1000">@Resources.Lang.Kilometer</option>
+                <option data-multiplier="4828.0417">@Resources.Lang.League</option>
+                <option data-multiplier="5556">@Resources.Lang.LeagueNautical</option>
+                <option selected data-multiplier="1">@Resources.Lang.Meter</option>
+                <option data-multiplier="2.54e-08">@Resources.Lang.Microinch</option>
+                <option data-multiplier="1609.344">@Resources.Lang.Mile</option>
+                <option data-multiplier="0.001">@Resources.Lang.Millimeter</option>
+                <option data-multiplier="0.9144">@Resources.Lang.Yard</option>
+            </select>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="To">@Resources.Lang.To</label>
+        <div class="controls">
+            <select id="To">
+                <option data-multiplier="0.01">@Resources.Lang.Centimeter</option>
+                <option data-multiplier="0.3048">@Resources.Lang.Feet</option>
+                <option data-multiplier="0.0254">@Resources.Lang.Inch</option>
+                <option data-multiplier="1000">@Resources.Lang.Kilometer</option>
+                <option data-multiplier="4828.0417">@Resources.Lang.League</option>
+                <option data-multiplier="5556">@Resources.Lang.LeagueNautical</option>
+                <option selected data-multiplier="1">@Resources.Lang.Meter</option>
+                <option data-multiplier="2.54e-08">@Resources.Lang.Microinch</option>
+                <option data-multiplier="1609.344">@Resources.Lang.Mile</option>
+                <option data-multiplier="0.001">@Resources.Lang.Millimeter</option>
+                <option data-multiplier="0.9144">@Resources.Lang.Yard</option>
+            </select>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="Result">@Resources.Lang.ResultText</label>
+        <div class="controls">
+           <input id="Result" type="text" placeholder="">
+        </div>
+    </div>
+</form>

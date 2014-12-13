@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = Resources.Lang.UnixTimeTitle;
+    ViewBag.Description = Resources.Lang.UnixtimePageDescription;
+    ViewBag.PageKeyWords = Resources.Lang.UnixtimePageKeywords;
+}
+<script type="text/javascript">
+    $(function () {
+
+        $('#btnToUnixTime').click(function () {
+            var humDate = new Date(Date.UTC($('#fromYear').val(),
+                  $('#fromMonth').val() - 1,
+                  $('#fromDay').val(),
+                  $('#fromHour').val(),
+                  $('#fromMinute').val(),
+                  $('#fromSecond').val()));
+            $("#fromResult").text(humDate.getTime() / 1000.0);
+        });
+
+        $('#btnToDateTime').click(function () {
+            var theDate = new Date($('#toTimestamp').val() * 1000);
+            $("#fromTimestampResult").text(theDate.toGMTString());
+        });
+    });
+</script>
+
+@*<div id="tab2" class="tab_content">*@
+<!-- page title -->
+<div class="page_title">
+    <h2>@Resources.Lang.UnixTimeTitle</h2>
+    @Html.Raw(Resources.Lang.UnixTimeBody)
+</div>
+<!-- / page title -->
+<div style="width: 100%">
+    <div style="width: 420px; margin-left: auto; margin-right: auto;">
+        <div style="width: 420px; margin-left: auto; margin-right: auto;">
+            <div class="simpleForm">
+                <table>
+                    <tr>
+                        <td>@Resources.Lang.Year:
+                        </td>
+                        <td>@Resources.Lang.Month:
+                        </td>
+                        <td>@Resources.Lang.Day:
+                        </td>
+                        <td>@Resources.Lang.Hour:
+                        </td>
+                        <td>@Resources.Lang.Minute:
+                        </td>
+                        <td>@Resources.Lang.Second:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="fromYear" type="text" maxlength="4" />
+                        </td>
+                        <td>
+                            <input id="fromMonth" type="text" maxlength="2" />
+                        </td>
+                        <td>
+                            <input id="fromDay" type="text" maxlength="2" />
+                        </td>
+                        <td>
+                            <input id="fromHour" type="text" maxlength="2" />
+                        </td>
+                        <td>
+                            <input id="fromMinute" type="text" maxlength="2" />
+                        </td>
+                        <td>
+                            <input id="fromSecond" type="text" maxlength="2" />
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <input id="btnToUnixTime" type="button" class="btn btn-primary" value="Convert" />
+                </div>
+                <div id="fromResult">
+                    @Resources.Lang.ResultText
+                </div>
+            </div>
+            <br />
+            <div class="simpleForm">
+                <div>
+                    Unix Timestamp:
+                </div>
+                <div>
+                    <input id="toTimestamp" type="text" maxlength="10" />
+                </div>
+                <div>
+                    <input id="btnToDateTime" type="button" class="btn btn-primary" value="Convert" />
+                </div>
+                <div id="fromTimestampResult">
+                    @Resources.Lang.ResultText
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

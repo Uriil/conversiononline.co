@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Md5";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+
+        $('#btnEncrypt').click(function () {
+            var result = $('#inputString').val();
+            $("#encryptedString").text(md5(result));
+        });
+    });
+</script>
+
+<div class="page_title">
+    <h2>MD5</h2>
+    <p>The MD5 Message-Digest Algorithm is a widely used cryptographic hash function that produces a 128-bit (16-byte) hash value. Specified in RFC 1321, MD5 has been utilized in a wide variety of security applications, and is also commonly used to check data integrity. MD5 was designed by Ron Rivest in 1991 to replace an earlier hash function, MD4. An MD5 hash is typically expressed as a hexadecimal number, 32 digits long.</p>
+    <p>This simple tool computes the MD5 hash of a string.</p>
+</div>
+
+<div style="width: 100%">
+    <div style="width: 420px; margin-left: auto; margin-right: auto;">
+    <div class="simpleForm">
+                <div>
+                    Input string:
+                </div>
+                <div>
+                    <input id="inputString" type="text" />
+                </div>
+                <div>
+                    <input id="btnEncrypt" type="button" class="btn btn-primary" value="Convert" />
+                </div>
+                <div id="encryptedString">
+                    @Resources.Lang.ResultText
+                </div>
+            </div>
+    </div>
+    </div>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Centimeter" xml:space="preserve">
+    <value>Сантиметер</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email для отправки сообщений info@conversiononline.co. Я отвечаю на все входящие письма.</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="ContactsBody" xml:space="preserve">
+    <value>Спасибо за посещение conversiononline.co. Если у вас есть какие-то вопросы, предложения или баг репорты, пожалуйста пишете на Email</value>
+  </data>
+  <data name="ContactsTitle" xml:space="preserve">
+    <value>Контактная информация</value>
+  </data>
+  <data name="CurrentlyAvailableBody" xml:space="preserve">
+    <value>Планируется развивать сайт и добавить больше возможностей. Вот то, что уже готово</value>
+  </data>
+  <data name="CurrentlyAvailableTitle" xml:space="preserve">
+    <value>Сейчас доступны</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="Feet" xml:space="preserve">
+    <value>Фут</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Из</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Добро пожаловать</value>
+  </data>
+  <data name="HomePageBody" xml:space="preserve">
+    <value>Ресурс был создан в образовательных целях. Если у вас есть какие-то идеи, как сделать его лучше, пишите на контактный Email.</value>
+  </data>
+  <data name="HomePageDescription" xml:space="preserve">
+    <value>Онлайн перевод единиц измерений</value>
+  </data>
+  <data name="HomePageKeywords" xml:space="preserve">
+    <value>онлайн,конвертация</value>
+  </data>
+  <data name="HomePageTitle" xml:space="preserve">
+    <value>Conversion Online - Добро пожаловать</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Часы</value>
+  </data>
+  <data name="Inch" xml:space="preserve">
+    <value>Дюйм</value>
+  </data>
+  <data name="Kilometer" xml:space="preserve">
+    <value>Километр</value>
+  </data>
+  <data name="League" xml:space="preserve">
+    <value>Лига</value>
+  </data>
+  <data name="LeagueNautical" xml:space="preserve">
+    <value>Морская лига</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Длины</value>
+  </data>
+  <data name="LengthBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Длина&lt;/strong&gt; — физическая величина, числовая характеристика протяжённости линий. В узком смысле под длиной понимают линейный размер предмета в продольном направлении (обычно это направление наибольшего размера), то есть расстояние между его двумя наиболее удалёнными точками, измеренное горизонтально, в отличие от высоты, которая измеряется в вертикальном направлении, а также ширины или толщины, которые измеряются поперёк объекта (под прямым углом к длине). В физике термин «длина» обычно используется как синоним «расстояния».&lt;/p&gt;
+&lt;p&gt;Размерность длины — dim l = L. В ряду других пространственных величин длина — это величина единичной размерности, тогда как площадь — двухмерная, объём — трёхмерная. В большинстве систем измерений единица длины — одна из фундаментальных единиц измерения, на основе которых образуются другие единицы. В международной системе единиц (СИ) за единицу длины принят метр.&lt;/p&gt;</value>
+  </data>
+  <data name="LengthTitle" xml:space="preserve">
+    <value>Конвертация длин</value>
+  </data>
+  <data name="Meter" xml:space="preserve">
+    <value>Метр</value>
+  </data>
+  <data name="Microinch" xml:space="preserve">
+    <value>Микродюйм</value>
+  </data>
+  <data name="Mile" xml:space="preserve">
+    <value>Миля</value>
+  </data>
+  <data name="Millimeter" xml:space="preserve">
+    <value>Миллиметр</value>
+  </data>
+  <data name="Minute" xml:space="preserve">
+    <value>Минуты</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Колличество</value>
+  </data>
+  <data name="ResultText" xml:space="preserve">
+    <value>Результат</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>Секунды</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>В</value>
+  </data>
+  <data name="UnixTimeBody" xml:space="preserve">
+    <value>&lt;p&gt;UNIX-время (англ. Unix time) или POSIX-время — система описания моментов во времени, принятая в UNIX и других POSIX-совместимых операционных системах. Определяется как количество секунд, прошедших с полуночи (00:00:00 UTC) 1 января 1970 года (четверг); время с этого момента называют «эрой UNIX» (англ. Unix Epoch).&lt;/p&gt;
+&lt;p&gt;Представление времени в виде количества секунд удобно использовать для сравнения и хранения дат (дата и время в этом формате занимают всего 4 или 8 байтов). При необходимости обращения к элементам дат (день, месяц, год) секунды можно преобразовать в любой подходящий формат (и наоборот), но если такие преобразования выполняются часто, они снижают производительность.&lt;/p&gt;</value>
+  </data>
+  <data name="UnixtimePageDescription" xml:space="preserve">
+    <value>Перевод из unixtime в читаемые дату и время</value>
+  </data>
+  <data name="UnixtimePageKeywords" xml:space="preserve">
+    <value>unixtime, таймстэмп,конвертация,онлайн</value>
+  </data>
+  <data name="UnixTimeTitle" xml:space="preserve">
+    <value>UnixTime Конвертация</value>
+  </data>
+  <data name="UpcomingServices" xml:space="preserve">
+    <value>В разработке</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Массы</value>
+  </data>
+  <data name="Yard" xml:space="preserve">
+    <value>Ярд</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Год</value>
+  </data>
+</root>

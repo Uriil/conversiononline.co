@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = Resources.Lang.HomePageTitle;
+    ViewBag.Description = Resources.Lang.HomePageDescription;
+    ViewBag.PageKeyWords = Resources.Lang.HomePageKeywords;
+}
+<div id="tab1" class="tab_content">
+    <!-- page title -->
+    <div class="page_title">
+        <h2>@Resources.Lang.Hello</h2>
+        <img class="profile_image" src="/images/profile_image.jpg" alt="Profile Image" />
+        @Resources.Lang.HomePageBody
+    </div>
+    <!-- / page title -->
+
+    <!-- services -->
+    <div class="services">
+        <h2>@Resources.Lang.CurrentlyAvailableTitle</h2>
+        @Resources.Lang.CurrentlyAvailableBody :
+            <ul>
+                <li>Unixtime</li>
+                <li>@Resources.Lang.Length</li>
+                <li>MD5</li>
+            </ul>
+        <h2>@Resources.Lang.UpcomingServices</h2>
+        Working on next features now:
+            <ul>
+                <li>@Resources.Lang.Weight</li>
+            </ul>
+    </div>
+    <!-- / services -->
+</div>
+
+
+
+
