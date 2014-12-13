@@ -7,3 +7,5 @@
 /src/packages
 /src/Coversion/Properties/PublishProfiles
 /src/Coversion/*.user
+/src/Coversion.v11.suo
+/src/Coversion.v12.suo
